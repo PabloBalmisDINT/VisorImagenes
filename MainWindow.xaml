@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
-        Title="Visor de Imágenes" Height="450" Width="800">
+        Title="Visor de Imágenes"
+        Height="515"
+        Width="625"
+        MinHeight="515"
+        MinWidth="625"
+        Icon="icon.ico">
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom"
-                    Background="LightBlue"
-                    Height="75"
-                    Margin="10"
+                   Background="LightBlue"
+                   Height="75"
+                   Margin="10"
                    LastChildFill="False">
             <TextBlock DockPanel.Dock="Left"
                        FontSize="20"
@@ -25,7 +30,7 @@
                 Margin="3"
                 CornerRadius="5">
             <DockPanel Background="LightGreen"
-                        Width="120"
+                       Width="120"
                        LastChildFill="False">
                 <Button DockPanel.Dock="Top"
                         Width="100"
@@ -43,14 +48,37 @@
             </DockPanel>
         </Border>
         <StackPanel DockPanel.Dock="Top"
-            Height="50">
+                    Height="50">
             <TextBlock FontSize="40"
                        FontFamily="rubik"
                        TextAlignment="Center">Visor de Imágenes
             </TextBlock>
         </StackPanel>
         <WrapPanel>
-            
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
+            <Image Source="episodioIV.jpg"
+                   Height="150"
+                   Margin="10" />
         </WrapPanel>
     </DockPanel>
 </Window>

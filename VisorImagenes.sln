@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisorImagenes", "VisorImagenes.csproj", "{58248B4D-D170-40C3-B99B-96B4898F22C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{DA5F63F9-E2C8-450E-8D0D-9AE2A611C458}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Recursos\episodioIV.jpg = ..\..\..\Recursos\episodioIV.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

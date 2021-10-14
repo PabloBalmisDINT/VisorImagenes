@@ -6,11 +6,50 @@
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
         Title="Visor de Imágenes"
-        Height="515"
-        Width="625"
-        MinHeight="515"
-        MinWidth="625"
+        Height="520"
+        Width="630"
+        MinHeight="520"
+        MinWidth="630"
         Icon="icon.ico">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock"
+               x:Key="TextoAbajo">
+            <Setter Property="FontSize"
+                    Value="20"></Setter>
+            <Setter Property="FontFamily"
+                    Value="Rubik"></Setter>
+            <Setter Property="Margin"
+                    Value="0,25,0,0"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width"
+                    Value="100"></Setter>
+            <Setter Property="Margin"
+                    Value="5"></Setter>
+        </Style>
+        <Style TargetType="Button"
+               x:Key="Abajo"
+               BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="DockPanel.Dock"
+                    Value="Bottom"></Setter>
+        </Style>
+        <Style TargetType="Button"
+               x:Key="Arriba"
+               BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="DockPanel.Dock"
+                    Value="Top"></Setter>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Source"
+                    Value="episodioIV.jpg"></Setter>
+            <Setter Property="Height"
+                    Value="150"></Setter>
+            <Setter Property="Margin"
+                    Value="10"></Setter>
+        </Style>
+    </Window.Resources>
+    
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom"
                    Background="LightBlue"
@@ -18,11 +57,9 @@
                    Margin="10"
                    LastChildFill="False">
             <TextBlock DockPanel.Dock="Left"
-                       FontSize="20"
-                       FontFamily="Rubik">Nº Imagenes: 10</TextBlock>
+                       Style="{StaticResource TextoAbajo}">Nº Imagenes: 8</TextBlock>
             <TextBlock DockPanel.Dock="Right"
-                       FontSize="20"
-                       FontFamily="Rubik">Diseñado Por Pablo Martínez</TextBlock>
+                       Style="{StaticResource TextoAbajo}">Diseñado por Pablo Martínez</TextBlock>
         </DockPanel>
         <Border DockPanel.Dock="Right"
                 BorderThickness="3"
@@ -32,18 +69,11 @@
             <DockPanel Background="LightGreen"
                        Width="120"
                        LastChildFill="False">
-                <Button DockPanel.Dock="Top"
-                        Width="100"
-                        Margin="5">Añadir imágen</Button>
-                <Button DockPanel.Dock="Top"
-                        Width="100"
-                        Margin="5">Eliminar imágen</Button>
-                <Button DockPanel.Dock="Bottom"
-                        Width="100"
-                        Margin="5">Recortar</Button>
-                <Button DockPanel.Dock="Bottom"
-                        Width="100"
-                        Margin="5">Rotar</Button>
+                <Button Style="{StaticResource Arriba}">Añadir imágen</Button>
+                <Button Style="{StaticResource Arriba}">Eliminar imágen</Button>
+                <Button Style="{StaticResource Arriba}">Eliminar todas</Button>
+                <Button Style="{StaticResource Abajo}">Recortar</Button>
+                <Button Style="{StaticResource Abajo}">Rotar</Button>
 
             </DockPanel>
         </Border>
@@ -55,30 +85,14 @@
             </TextBlock>
         </StackPanel>
         <WrapPanel>
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
-            <Image Source="episodioIV.jpg"
-                   Height="150"
-                   Margin="10" />
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
         </WrapPanel>
     </DockPanel>
 </Window>
